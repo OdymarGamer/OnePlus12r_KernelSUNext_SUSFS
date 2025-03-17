@@ -30,6 +30,7 @@ jobs:
       RELEASE_NAME: "*TEST BUILD* OnePlus 12R Kernel With KernelSU Next & SUSFS v1.5.5 *TEST BUILD*"
       RELEASE_NOTES: |
         This release contains KernelSU Next and SUSFS v1.5.5
+        This Is The Unstable Version You Can use It daily But Stable is Prefered
         
         Module: 
         -> https://github.com/sidex15/ksu_module_susfs
