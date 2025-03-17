@@ -7,7 +7,7 @@ on:
   workflow_call:  # This allows this workflow to be called from another workflow
 
 jobs:
-  build-kernel-op12r-kernelsuNext-susfs:
+  build-kernel-op12r-kernelsuNext-susfs-Unstable:
     uses: ./.github/workflows/BuildUnstable.yml
     secrets: inherit
     with:
