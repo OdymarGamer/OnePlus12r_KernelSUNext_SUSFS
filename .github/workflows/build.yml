@@ -34,7 +34,7 @@ on:
         description: "Add_KSU_Next"
         required: true
         type: boolean
-        SUSFS_ENABLED:
+      SUSFS_ENABLED:     
         description: "Add_SUSFS"
         required: true
         type: boolean
