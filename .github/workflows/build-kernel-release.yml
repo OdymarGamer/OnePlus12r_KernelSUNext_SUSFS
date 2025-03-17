@@ -27,10 +27,10 @@ jobs:
       REPO_OWNER: OdymarGamer
       REPO_NAME: OnePlus12r_KernelSUNext_SUSFS
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      RELEASE_NAME: "*TEST BUILD* OnePlus 12R Kernel With KernelSU Next & SUSFS v1.5.5 *TEST BUILD*"
+      RELEASE_NAME: " OnePlus 12R Kernel With KernelSU Next & SUSFS v1.5.5 "
       RELEASE_NOTES: |
         This release contains KernelSU Next and SUSFS v1.5.5
-        
+        Stable Release That Works Very Well for Daily Use
         Module: 
         -> https://github.com/sidex15/ksu_module_susfs
         
