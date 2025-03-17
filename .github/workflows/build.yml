@@ -158,6 +158,11 @@ jobs:
       - name: Add KsuNext Configuration Settings
         if: inputs.KSUNEXT_ENABLED
         run: |
+          echo "Changing to configuration directory: $CONFIG..."
+          cd "$CONFIG/kernel_platform"
+          
+          echo "Adding KsuNext configuration settings to gki_defconfig..."
+
           # Add KSU configuration settings
           echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KSU_WITH_KPROBES=n" >> ./common/arch/arm64/configs/gki_defconfig
