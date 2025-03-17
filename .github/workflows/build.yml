@@ -191,6 +191,11 @@ jobs:
                
       - name: Add additional tmpfs config settings
         run: |
+          echo "Changing to configuration directory: $CONFIG..."
+          cd "$CONFIG/kernel_platform"
+
+          echo "Adding additional tmpfs config settings..."
+          
           # Add additional tmpfs config settings
           echo "CONFIG_TMPFS_XATTR=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_TMPFS_POSIX_ACL=y" >> ./common/arch/arm64/configs/gki_defconfig
