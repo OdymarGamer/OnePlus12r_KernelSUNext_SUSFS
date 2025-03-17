@@ -14,52 +14,20 @@ on:
         default: true
 
 jobs:
-  build-kernel-op11:
-    uses: ./.github/workflows/op11.yml
+  build-kernel-op12r:
+    uses: ./.github/workflows/op12r.yml
     secrets: inherit
-  build-kernel-op11r:
-    uses: ./.github/workflows/op11r.yml
-    secrets: inherit
-  build-kernel-op12:
-    uses: ./.github/workflows/op12.yml
-    secrets: inherit
-  build-kernel-op13r:
-    uses: ./.github/workflows/op13r.yml
-    secrets: inherit
-  build-kernel-opnord4:
-    uses: ./.github/workflows/opnord4.yml
-    secrets: inherit
-  build-kernel-opopen:
-    uses: ./.github/workflows/opopen.yml
-    secrets: inherit
-  build-kernel-opace2:
-    uses: ./.github/workflows/opace2.yml
-    secrets: inherit
-  build-kernel-opace2pro:
-    uses: ./.github/workflows/opace2pro.yml
-    secrets: inherit
-  build-kernel-opace5:
-    uses: ./.github/workflows/opace5.yml
-    secrets: inherit
-
+    
   trigger-release:
     runs-on: ubuntu-latest
     needs:
-        - build-kernel-op11
-        - build-kernel-op11r
-        - build-kernel-op12
-        - build-kernel-op13r
-        - build-kernel-opnord4
-        - build-kernel-opopen
-        - build-kernel-opace2
-        - build-kernel-opace2pro
-        - build-kernel-opace5
+        - build-kernel-op12r
     if: ${{ inputs.make_release }}
     env:
-      REPO_OWNER: TheWildJames
-      REPO_NAME: OnePlus_KernelSU_SUSFS
+      REPO_OWNER: OdymarGamer
+      REPO_NAME: OnePlus12r_KernelSUNext_SUSFS
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      RELEASE_NAME: "*TEST BUILD* OnePlus Kernels With KernelSU Next & SUSFS v1.5.5 *TEST BUILD*"
+      RELEASE_NAME: "*TEST BUILD* OnePlus 12R Kernel With KernelSU Next & SUSFS v1.5.5 *TEST BUILD*"
       RELEASE_NOTES: |
         This release contains KernelSU Next and SUSFS v1.5.5
         
@@ -72,10 +40,10 @@ jobs:
         Features:
         [+] KernelSU-Next
         [+] SUSFS v1.5.5
-        [+] Wireguard Support
-        [+] Maphide LineageOS Detections
-        [+] Futile Maphide for jit-zygote-cache Detections
-        [+] Magic Mount Support
+        [+] maybe Wireguard Support
+        [+] Maybe Maphide LineageOS Detections
+        [+] Maybe Futile Maphide for jit-zygote-cache Detections
+        [+] Maybe Magic Mount Support
 
     steps:
       # Checkout the code
