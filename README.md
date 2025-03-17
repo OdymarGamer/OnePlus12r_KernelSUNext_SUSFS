@@ -1,6 +1,7 @@
-# Wild Plus Kernels for Android GKI 2.0 Devices and Others
+# Ody Plus Kernels for Android GKI 2.0 Devices and Others
 
 ## Your warranty is no longer valid!
+## Releases Here https://github.com/OdymarGamer/OnePlus12r_KernelSUNext_SUSFS/releases (Ignore PreRealese)
 
 I am **not responsible** for bricked devices, damaged hardware, or any issues that arise from using this kernel.
 
