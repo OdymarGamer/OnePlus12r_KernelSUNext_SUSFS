@@ -32,7 +32,7 @@ By flashing this kernel, **YOU** are choosing to make these modifications. If so
 - **SUSFS**: Developed by [simonpunk](https://gitlab.com/simonpunk/susfs4ksu.git).
 - **SUSFS Module**: Developed by [sidex15](https://github.com/sidex15).
 - **Sultan Kernels**: Developed by [kerneltoast](https://github.com/kerneltoast).
-- **TheWilDJAmes**: [him](https://github.com/WildPlusKernel)
+- **TheWilDJAmes**: Huge credit to him he did 99.9% of the work [him](https://github.com/WildPlusKernel)
 
 Special thanks to the open-source community for their contributions!
 
