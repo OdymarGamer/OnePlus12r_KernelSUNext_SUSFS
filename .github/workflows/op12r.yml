@@ -5,7 +5,7 @@ permissions:
 
 on:
   workflow_call:  # This allows this workflow to be called from another workflow
-  
+
 jobs:
   build-kernel-op12r-kernelsuNext-susfs:
     uses: ./.github/workflows/build.yml
@@ -17,6 +17,5 @@ jobs:
       manifest: "oneplus12r_v.xml"
       android_version: "android13"
       kernel_version: "5.15"
-      KSUNEXT_ENABLED: true  # Enables KernelSU Next
-      SUSFS_ENABLED: true  # Enables SUSFS
-
+      KSUNEXT_ENABLED: true
+      SUSFS_ENABLED: true
