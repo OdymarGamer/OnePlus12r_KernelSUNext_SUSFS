@@ -41,7 +41,7 @@ on:
         default: true
   
 jobs:
-  build-kernel-oneplus-kernelsu-susfs:
+  build-kernel-oneplus-KernelSUNext-susfs:
     runs-on: ubuntu-latest
 
     steps:
