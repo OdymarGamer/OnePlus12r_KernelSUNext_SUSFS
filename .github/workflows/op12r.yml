@@ -1,0 +1,19 @@
+name: OP12R
+permissions:
+  contents: write  # Allow writing to repository contents (for pushing tags)
+  actions: write   # Allows triggering actions
+
+on:
+  workflow_call:  # This allows this workflow to be called from another workflow
+  
+jobs:
+  build-kernel-op12r-kernelsu-susfs:
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+    with:
+      model: "OP12R"
+      soc: "kalama"
+      branch: "oneplus/sm8550"
+      manifest: "oneplus12r_v.xml"
+      android_version: "android13"
+      kernel_version: "5.15"
