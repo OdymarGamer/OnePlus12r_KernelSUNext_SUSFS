@@ -131,7 +131,7 @@ jobs:
           cd ./KernelSU-Next
           
           echo "Applying next SUSFS patches..."
-          cp ../../../kernel_patches/next/0001-kernel-patch-susfs-v1.5.5-to-KernelSU-Next-v1.0.5_1.patch ./
+          cp ../../../kernel_patchesfor12r/next/0001-kernel-patch-susfs-v1.5.5-to-KernelSU-Next-v1.0.5_1.patch ./
           patch -p1 --forward < 0001-kernel-patch-susfs-v1.5.5-to-KernelSU-Next-v1.0.5_1.patch || true
           
           # Change to common directory and apply SUSFS patch
@@ -144,7 +144,7 @@ jobs:
           echo "Changing to configuration directory: $CONFIG..."
           cd "$CONFIG/kernel_platform/common"
           # Apply additional patch
-          cp ../../../kernel_patches/next/next_hooks.patch ./
+          cp ../../../kernel_patchesfor12r/next/next_hooks.patch ./
           patch -p1 --fuzz=3 < ./next_hooks.patch
           
       - name: Apply Hide Stuff Patches
@@ -152,7 +152,7 @@ jobs:
           echo "Changing to configuration directory: $CONFIG..."
           cd "$CONFIG/kernel_platform/common"
           # Apply additional patch
-          cp ../../../kernel_patches/69_hide_stuff.patch ./
+          cp ../../../kernel_patchesfor12r/69_hide_stuff.patch ./
           patch -p1 -F 3 < 69_hide_stuff.patch
         
       - name: Add KsuNext Configuration Settings
