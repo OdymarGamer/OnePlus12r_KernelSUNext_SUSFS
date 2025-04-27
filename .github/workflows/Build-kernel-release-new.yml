@@ -39,7 +39,7 @@ jobs:
         
         Features:
         [+] KernelSU-Next
-        [+] SUSFS v1.5.5
+        [+] SUSFS v1.5.7
         [+] maybe Wireguard Support
         [+] Maybe Maphide LineageOS Detections
         [+] Maybe Futile Maphide for jit-zygote-cache Detections
