@@ -146,8 +146,8 @@ jobs:
           echo "Changing to configuration directory: $CONFIG..."
           cd "$CONFIG/kernel_platform/common"
           # Apply additional patch
-          cp ../../../kernel_patchesfor12r/next/next_hooks.patch ./
-          patch -p1 --fuzz=3 < ./next_hooks.patch
+          cp ../../../kernel_patchesfor12r/next/syscall_hooks.patch ./
+          patch -p1 --fuzz=3 < ./syscall_hooks.patch
           
       - name: Apply Hide Stuff Patches
         run: |
